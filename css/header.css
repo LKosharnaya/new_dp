@@ -1,0 +1,89 @@
+#toggle {
+    display: none;
+}
+
+header {
+    padding-top: 30px;
+}
+
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #logo {
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 14px;
+    color: #000;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header #logo span {
+    display: block;
+    font-size: 7.5px;
+    line-height: 8px;
+}
+
+
+.yellow header #logo svg path {
+    fill: black;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu a {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    color: #030303;
+    white-space: nowrap;
+
+}
+
+.zoom_a {
+    margin-left: 50px;
+}
+
+.black .menu a,
+.black header #logo {
+    color: #fff;
+}
+
+.large a,
+.black .menu .large a {
+    color: #FECD08;
+}
+
+#list-tems {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#list-tems li {
+    margin-left: 15px;
+}
+
+#list-tems li.active svg {
+    stroke: black;
+}
+
+.black #list-tems li.active svg {
+    stroke: white;
+}
+
+#triangle-down {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #FECD08;
+    opacity: 0.5;
+}

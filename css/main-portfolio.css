@@ -1,0 +1,149 @@
+#main-portfolio {
+    margin-bottom: 170px;
+}
+
+#main-portfolio .title {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    margin-bottom: 70px;
+}
+
+#main-portfolio .title .name {
+    font-weight: bold;
+}
+
+#main-portfolio .title a {
+    color: #000;
+    font-weight: normal;
+}
+
+body.black #main-portfolio .title,
+body.black #main-portfolio .title a {
+    color: #fff;
+}
+
+body.black #main-portfolio .line {
+    background: #fff;
+}
+
+#slider-portfolio {
+    position: relative;
+}
+
+#slider-portfolio .slide {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+#slider-portfolio .left {
+    width: 23%;
+    position: relative;
+    z-index: 1;
+}
+
+#slider-portfolio .right {
+    width: 66%;
+    position: relative;
+    z-index: 50;
+}
+
+#slider-portfolio .left h3 {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+    height: 0;
+    overflow: hidden;
+}
+
+#slider-portfolio .left h3:first-child {
+    height: 36px;
+}
+
+#slider-portfolio .left p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #040404;
+    height: 0;
+    overflow: hidden;
+}
+
+#slider-portfolio .left p:nth-of-type(1) {
+    height: 40px;
+}
+
+body.black #slider-portfolio .left h3,
+body.black #slider-portfolio .left p {
+    color: #fff;
+}
+
+#slider-portfolio .right img {
+    display: block;
+    position: relative;
+    z-index: 50;
+}
+
+#slider-portfolio .right .img:first-child {
+    float: left;
+    margin-right: 45px;
+    max-height: 600px;
+    overflow: hidden;
+}
+
+#slider-portfolio .right .img:last-child {
+    overflow: hidden;
+    max-height: 600px;
+}
+
+#slider-portfolio .right .img:last-child img:nth-child(2n) {
+    margin-top: 45px;
+}
+
+#slider-portfolio .string {
+    position: absolute;
+    z-index: 1;
+    width: 99vw;
+    top: 287px;
+    left: calc((100vw - 1200px)/-2);
+    right: calc((100vw - 1200px)/-2);
+}
+
+#slider-portfolio .string span {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 145px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
+    text-stroke: 1px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
+}
+
+#slider-portfolio .string .active span {
+    color: #fff;
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
+}
+
+#marquee1,
+#marquee2 {
+    overflow: hidden;
+    width: 100%;
+}
+
+#marquee1 div,
+#marquee2 div {
+    width: 200%;
+}

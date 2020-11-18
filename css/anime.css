@@ -1,0 +1,254 @@
+#first-display h1 {
+    transition: all 0.5s ease-in-out;
+}
+
+/*start anime for block uslugi*/
+.anime #list-uslugs #uslug1_circle1 {
+    opacity: 0;
+    animation: cirlce1 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anime #list-uslugs #uslug1_circle2 {
+    opacity: 0;
+    animation: cirlce2 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anime #list-uslugs #uslug2_circle,
+.anime #uslug5_circle,
+.anime #uslug6_circle1 {
+    opacity: 0;
+    animation: cirlce3 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anime #uslug6_circle2 {
+    opacity: 0;
+    animation: cirlce4 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anime #list-uslugs .img .top,
+.anime #list-uslugs .img .bottom {
+    animation: height 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+.anime #uslug2_path,
+.anime #uslug3_path1,
+.anime #uslug3_path2,
+.anime #uslug3_path3,
+.anime #uslug3_path4,
+.anime #uslug4_path2,
+.anime #uslug5_path1,
+.anime #uslug5_path2,
+.anime #uslug6_line1,
+.anime #uslug6_line2 {
+    opacity: 0;
+    animation: dash 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anime #uslug4_path1 {
+    opacity: 0;
+    animation: dash2 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes height {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 50%;
+    }
+}
+
+@keyframes cirlce1 {
+    from {
+        opacity: 1;
+        stroke-dasharray: 0 431
+    }
+
+    to {
+        opacity: 1;
+        stroke-dasharray: 431 431
+    }
+}
+
+@keyframes cirlce2 {
+    from {
+        opacity: 1;
+        stroke-dasharray: 0 242
+    }
+
+    to {
+        opacity: 1;
+        stroke-dasharray: 242 242
+    }
+}
+
+@keyframes cirlce3 {
+    from {
+        opacity: 1;
+        stroke-dasharray: 0 377
+    }
+
+    to {
+        opacity: 1;
+        stroke-dasharray: 377 377
+    }
+}
+
+@keyframes cirlce4 {
+    from {
+        opacity: 1;
+        stroke-dasharray: 0 195
+    }
+
+    to {
+        opacity: 1;
+        stroke-dasharray: 195 195
+    }
+}
+
+@keyframes dash {
+    0% {
+        opacity: 1;
+        stroke-dasharray: 0 300
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dasharray: 300 1000;
+    }
+}
+
+@keyframes dash2 {
+    0% {
+        opacity: 1;
+        stroke-dasharray: 0 400
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dasharray: 400 1200;
+    }
+}
+
+/*end block uslugi*/
+
+/*start block portfolio*/
+.anime #slider-portfolio .left h3:first-child {
+    animation: height_out 2.5s ease-in-out;
+}
+
+.anime #slider-portfolio .left p:nth-of-type(1) {
+    animation: height_out3 2.5s ease-in-out;
+
+}
+
+.anime #slider-portfolio .left h3:nth-of-type(2) {
+    animation: height_out2 2s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.anime #slider-portfolio .left p:nth-of-type(2) {
+    animation: height_out4 2s ease-in-out;
+    animation-delay: 0.5s;
+}
+
+.anime #slider-portfolio .right .img img {
+    animation: top 1s ease-in-out;
+
+}
+
+@keyframes height_out {
+    0% {
+        height: 36px;
+    }
+
+    33% {
+        height: 0px;
+    }
+
+    80% {
+        height: 0px;
+    }
+
+    100% {
+        height: 36px;
+    }
+}
+
+@keyframes height_out2 {
+    0% {
+        height: 0;
+    }
+
+    30% {
+        height: 36px;
+    }
+
+    45% {
+        height: 36px;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes height_out3 {
+    0% {
+        height: 40px;
+    }
+
+    33% {
+        height: 0;
+    }
+
+    80% {
+        height: 0;
+    }
+
+    100% {
+        height: 40px;
+    }
+}
+
+@keyframes height_out4 {
+    0% {
+        height: 0;
+    }
+
+    30% {
+        height: 40px;
+    }
+
+    45% {
+        height: 40px;
+    }
+
+    100% {
+        height: 0;
+    }
+}
+
+@keyframes top {
+    0% {
+        top: 0
+    }
+
+    100% {
+        top: -600px;
+    }
+}

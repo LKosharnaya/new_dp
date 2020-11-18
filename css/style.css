@@ -1,0 +1,104 @@
+@import url(reset.css);
+@import url(anime.css);
+@import url(menu_mobile.css);
+@import url(header.css);
+@import url(list-uslugi.css);
+@import url(wy.css);
+@import url(main-portfolio.css);
+@import url(clients.css);
+@import url(step.css);
+@import url(footer.css);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ECE8E2;
+}
+
+body.black {
+    background: #000000;
+}
+
+body.yellow {
+    background: #FECD08;
+}
+
+html {
+    font-size: 18px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 3.4em;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+#zoom2 h1 {
+    padding-top: 0;
+    white-space: nowrap;
+}
+
+.large h1 {
+    color: #FECD08;
+
+}
+
+h1 span {
+    display: block;
+}
+
+body.black h1 {
+    color: #fff;
+}
+
+body.black .large h1 {
+    color: #FECD08;
+}
+
+#first-display {
+    height: calc(100vh - 67px);
+    position: relative;
+    padding-top: 14em;
+}
+
+#menu-uslug {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7em;
+}
+
+#menu-uslug a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #040404;
+}
+
+body.black #menu-uslug a {
+    color: #fff;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 5em;
+}
+
+body.black h2 {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}

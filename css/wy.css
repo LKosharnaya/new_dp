@@ -1,0 +1,42 @@
+#list-wy {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 9.2em;
+}
+
+#list-wy li {
+    width: calc(33% - 120px);
+    margin-right: 120px;
+}
+
+#list-wy li b {
+    font-weight: bold;
+    font-size: 170px;
+    line-height: 170px;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#list-wy li:nth-child(1) b {
+    color: #F8AD03;
+}
+
+#list-wy li:nth-child(2) b {
+    color: #B72A22;
+}
+
+#list-wy li:nth-child(3) b {
+    color: #EF7D2A;
+}
+
+#list-wy li span {
+    font-size: 20px;
+    line-height: 30px;
+    color: #040404;
+}
+
+body.black #list-wy li span {
+    color: #fff;
+}
