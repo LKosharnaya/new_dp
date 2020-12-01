@@ -28,7 +28,7 @@
     position: absolute;
     z-index: 1;
     left: 0;
-    bottom: 50%;
+    bottom: 49%;
     width: 100%;
 }
 
@@ -140,7 +140,7 @@ svg#uslug6_svg3 {
 #list-uslugs h3 {
     font-weight: bold;
     font-size: 26px;
-    line-height: 36px;
+    line-height: 1.4;
     text-transform: uppercase;
     color: #000000;
     margin-bottom: 40px;
@@ -179,4 +179,30 @@ body.black #list-uslugs a {
 
 body.black #list-uslugs a svg {
     stroke: #fff;
+}
+
+@media (max-width:1200px) {
+    #list-uslugs h3 {
+        font-size: 18px;
+    }
+
+    #list-uslugs li {
+        margin-right: 25px;
+        width: calc(33% - 25px);
+    }
+}
+
+@media (max-width:767px) {
+
+    #list-uslugs li,
+    #list-uslugs li:nth-of-type(3n) {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    #list-uslugs h3 {
+        min-height: auto;
+        margin-bottom: 20px;
+    }
 }

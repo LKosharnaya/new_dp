@@ -8,15 +8,20 @@
 }
 
 #marquee span {
-    width: 50%;
     font-style: italic;
     font-weight: bold;
-    font-size: 150px;
-    line-height: 150px;
+    font-size: 9.1vw;
+    line-height: 1;
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
     text-stroke: 1px rgba(0, 0, 0, 0.5);
+    display: inline;
+}
+
+.black #marquee span {
+    -webkit-text-stroke: 1px #fff;
+    text-stroke: 1px #fff;
 }
 
 #marquee div {
@@ -49,6 +54,10 @@ footer .logo {
     flex-direction: column;
     justify-content: center;
     margin-bottom: 35px;
+}
+
+footer .logo.mobile {
+    display: none;
 }
 
 footer .logo span {
@@ -155,7 +164,7 @@ footer .bottom ul li svg {
 #footer-menu li a {
     font-weight: bold;
     font-size: 50px;
-    line-height: 50px;
+    line-height: 1;
     text-transform: uppercase;
     color: #030303;
     text-align: right;
@@ -172,6 +181,94 @@ footer .bottom ul li svg {
 }
 
 .black #footer-menu li a:hover {
+    color: transparent;
     -webkit-text-stroke: 1px #fff;
     text-stroke: 1px #fff;
+}
+
+@media (max-width:1200px) {
+    footer .logo {
+        margin-bottom: 20px;
+    }
+
+    footer .left {
+        width: 48%;
+    }
+
+    footer form {
+        margin-bottom: 20px;
+    }
+
+    footer input.text {
+        max-width: 43%;
+        margin-right: 20px;
+    }
+
+    #footer-menu li a {
+        font-size: 36px;
+    }
+}
+
+@media (max-width:767px) {
+    footer .logo.logo.mobile {
+        display: flex;
+        order: 1;
+    }
+
+    footer .left .logo {
+        display: none;
+    }
+
+    footer .right {
+        order: 2;
+        width: 100%;
+    }
+
+    footer .left {
+        order: 3;
+        width: 100%;
+    }
+
+    #footer-menu li {
+        text-align: left;
+    }
+
+    footer form {
+        flex-wrap: wrap;
+    }
+
+    footer input.text {
+        max-width: 100%;
+        width: calc(100% - 30px);
+        margin-bottom: 15px;
+    }
+
+    footer input.text:first-of-type {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    footer .bottom {
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+    }
+
+    footer .bottom a {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    footer .bottom ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    footer .bottom ul li {
+        margin: 0;
+    }
+
+    footer .bottom ul li svg {
+        width: 35px;
+        height: 35px;
+    }
 }

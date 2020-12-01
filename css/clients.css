@@ -1,12 +1,17 @@
 #clients {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #list-clients {
     width: 203px;
     height: 100%;
     max-height: 460px;
+}
+
+.black #list-clients img {
+    filter: invert(1);
 }
 
 #reviews {
@@ -18,9 +23,13 @@
     padding: 0 0 0 100px;
 }
 
+.black #reviews .slider-reviews {
+    filter: invert(1);
+}
+
 #reviews .slider-reviews p {
     font-size: 25px;
-    line-height: 35px;
+    line-height: 1.4;
     color: #040404;
     margin-bottom: 20px;
 }
@@ -28,7 +37,7 @@
 #reviews .slider-reviews h4 {
     font-weight: bold;
     font-size: 26px;
-    line-height: 36px;
+    line-height: 1.4;
     text-transform: uppercase;
     color: #000000;
 }
@@ -73,4 +82,47 @@ p.num {
 .slick-prev {
     background: url(../img/prev.png) no-repeat;
     right: 70px;
+}
+
+@media (max-width:1200px) {
+    #reviews .slider-reviews {
+        background-size: 40px;
+        padding: 0 0 0 50px;
+    }
+
+    #reviews .slider-reviews p {
+        font-size: 18px;
+    }
+
+    #reviews .slider-reviews h4 {
+        font-size: 20px;
+    }
+
+    #list-clients img {
+        max-width: 95%;
+    }
+}
+
+@media (max-width:767px) {
+
+    #list-clients,
+    #reviews {
+        width: 100%;
+    }
+
+    #marquee_clients div {
+        width: 200%;
+        height: auto;
+        display: flex;
+    }
+
+    #marquee_clients div span {
+        display: flex;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    #reviews {
+        margin-bottom: 50px;
+    }
 }

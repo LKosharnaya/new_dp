@@ -9,7 +9,7 @@
 #staps .num {
     font-weight: bold;
     font-size: 170px;
-    line-height: 170px;
+    line-height: 1;
     text-transform: uppercase;
     color: #F8AD03;
     width: 215px;
@@ -40,7 +40,7 @@
 #staps .name h3 {
     font-weight: bold;
     font-size: 26px;
-    line-height: 36px;
+    line-height: 1.4;
     text-transform: uppercase;
     color: #000000;
     margin-bottom: 40px;
@@ -48,7 +48,7 @@
 
 #staps .name p {
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.4;
     color: #040404
 }
 
@@ -60,7 +60,7 @@
 
 #staps .text p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     color: #040404;
     margin-bottom: 20px;
 }
@@ -72,7 +72,7 @@
 #staps .text ul li {
     font-weight: 600;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     color: #040404;
 }
 
@@ -86,4 +86,51 @@
 .black #staps .name,
 .black #staps .text {
     border-bottom: 1px solid #fff;
+}
+
+@media (max-width:1200px) {
+    #staps .num {
+        margin-right: 30px;
+    }
+
+    #staps .stap {
+        justify-content: space-between;
+    }
+
+    #staps .num {
+        font-size: 18vw;
+    }
+
+    #staps .name {
+        padding: 0 35px 45px 0;
+    }
+
+    #staps .text {
+        width: calc(100% - 435px);
+        padding-bottom: 45px;
+    }
+
+    #staps .text p,
+    #staps .text ul li {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:767px) {
+    #staps .stap {
+        flex-wrap: wrap;
+    }
+
+    #staps .text {
+        width: 100%;
+    }
+
+    #staps .name {
+        border: none;
+        padding-bottom: 0;
+    }
+
+    #staps .name p {
+        display: none;
+    }
 }

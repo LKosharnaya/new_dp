@@ -27,7 +27,7 @@ html {
 }
 
 .content {
-    width: 100%;
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -41,6 +41,10 @@ h1 {
     color: #000000;
     display: inline-block;
     margin: 0 auto;
+}
+
+#zoom2 {
+    margin-top: 20px;
 }
 
 #zoom2 h1 {
@@ -101,4 +105,29 @@ h2 {
 body.black h2 {
     color: #fff;
     border-bottom: 1px solid #fff;
+}
+
+@media(max-width:1200px) {
+    h1 {
+        font-size: 4.5vw;
+        width: 100%;
+    }
+
+    #menu-uslug li {
+        text-align: center;
+        margin: 0 10px;
+    }
+
+    #first-display {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+}
+
+@media(max-width:767px) {
+    #menu-uslug {
+        display: none;
+    }
 }

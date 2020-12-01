@@ -13,7 +13,7 @@
 #list-wy li b {
     font-weight: bold;
     font-size: 170px;
-    line-height: 170px;
+    line-height: 1;
     text-transform: uppercase;
     display: block;
     margin-bottom: 20px;
@@ -33,10 +33,45 @@
 
 #list-wy li span {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     color: #040404;
 }
 
 body.black #list-wy li span {
     color: #fff;
+}
+
+@media (max-width:1200px) {
+    #list-wy li {
+        width: calc(33% - 25px);
+        margin-right: 25px;
+    }
+
+    #list-wy li b {
+        font-size: 12vw;
+    }
+
+    #list-wy li span {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:767px) {
+    #list-wy {
+        margin-bottom: 50px;
+    }
+
+    #list-wy li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    #list-wy li b {
+        font-size: 100px;
+    }
+
+    #list-wy li span {
+        font-size: 20px;
+    }
 }
