@@ -1,4 +1,6 @@
+var vw = $(window).width();
 $(document).ready(function(){
+  if (vw>1024){
     $('#logo svg').mousemove(function(e){
       // положение элемента
       var pos = $(this).offset();
@@ -38,6 +40,7 @@ $(document).ready(function(){
       $('#logo #path9').css ('transform', 'translate('+path9X+'px,'+ path9Y+'px)');
       $('#logo #path10').css ('transform', 'translate('+path10X+'px,'+ path10Y+'px)');
     });
+
     $('#logo svg').mouseout(function(e){
       $('#logo #path1').css ('transform', 'translate(0px, 0px)');
       $('#logo #path2').css ('transform', 'translate(0px, 0px)');
@@ -50,6 +53,7 @@ $(document).ready(function(){
       $('#logo #path9').css ('transform', 'translate(0px, 0px)');
       $('#logo #path10').css ('transform', 'translate(0px, 0px)');
     });
+
     $('#first-display').mousemove(function(e){
       var pos = $(this).offset();
       var elem_left = pos.left;
@@ -59,17 +63,20 @@ $(document).ready(function(){
       var Yinner = e.pageY - elem_top;
       //console.log("X: " + Xinner + " Y: " + Yinner);
       if (Yinner < 350){
-        $('#first-display h1').css('transform', 'translateY(40px)');
+        $('#first-display .zoom').css('transform', 'translateY(40px)');
       }else
-      if (Yinner >= 350 && Yinner < 450){
-        $('#first-display h1').css('transform', 'translate(40px, 40px)');
-      }else if (Yinner > 450){
-        $('#first-display h1').css('transform', 'translateY(-40px)');
+      if (Yinner >= 350 && Yinner < 420){
+        $('#first-display .zoom').css('transform', 'translate(40px, 40px)');
+      }else if (Yinner > 420){
+        $('#first-display .zoom').css('transform', 'translateY(-40px)');
         }
       
       
     });
-    var marquee = $("#marquee"); 
+
+    
+  }
+  var marquee = $("#marquee"); 
     // оболочка для текста ввиде span 
     marquee.wrapInner("<span>");
     marquee.append(marquee.find("span").clone()); // тут у нас два span с текстом
@@ -86,82 +93,114 @@ $(document).ready(function(){
     marquee1.append(marquee1.find("span").clone()); // тут у нас два span с текстом
     marquee1.wrapInner("<div>");
     var reset1;
-  $('#marquee1').mousemove(function(){
     reset1 = function() {
       $(this).css("margin-left", "0%");        
-      $(this).stop().animate({ "margin-left": "-100%" }, 12000, 'linear', reset1);
+      $(this).stop().animate({ "margin-left": "-90%" }, 12000, 'linear', reset1);
   
     };
     reset1.call(marquee1.find("div"));
-  });
-  $('#marquee1').mouseout(function(){
-    reset1 = function() {
-      $(this).stop();        
-  };
-  reset1.call(marquee1.find("div"));
-  });
- 
- 
+   
     var marquee2 = $("#marquee2"); 
     // оболочка для текста ввиде span 
     marquee2.wrapInner("<span>");
     marquee2.append(marquee2.find("span").clone()); // тут у нас два span с текстом
     marquee2.wrapInner("<div>");
     var reset2;
-    $('#marquee2').mousemove(function(){
+   
       reset2 = function() {
         $(this).css("margin-left", "0%");        
-        $(this).stop().animate({ "margin-left": "-100%" }, 12000, 'linear', reset2);
+        $(this).stop().animate({ "margin-left": "-125%" }, 12000, 'linear', reset2);
     
       };
       reset2.call(marquee2.find("div"));
-    });
-    $('#marquee2').mouseout(function(){
-      reset2 = function() {
-        $(this).stop();        
-     };
-     reset2.call(marquee2.find("div"));
-    });
+   
+      if(vw>767){
     var marquee_c = $("#marquee_clients"); 
     // оболочка для текста ввиде span 
     marquee_c.wrapInner("<span>");
+    
     marquee_c.append(marquee_c.find("span").clone()); // тут у нас два span с текстом
     marquee_c.wrapInner("<div>");
-    var reset_c = function() {
-        $(this).css("margin-top", "0%");
-        $(this).animate({ "margin-top": "-100%" }, 12000, 'linear', reset_c);
-    };
-    reset_c.call(marquee_c.find("div"));
-
     
+      var reset_c = function() {
+          $(this).css("margin-top", "0%");
+          $(this).animate({ "margin-top": "-195.5%" }, 12000, 'linear', reset_c);
+      };
+      reset_c.call(marquee_c.find("div"));
+    }else{
+      $("#marquee_clients").slick({
+        autoplay: true,
+        autoplaySpeed:0,
+        speed: 2000,
+        arrows:false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1
+      });
+  
+    }
+    
+
+
+    var marquee_p= $("#marquee_p"); 
+    // оболочка для текста ввиде span 
+    marquee_p.wrapInner("<span>");
+    marquee_p.append(marquee_p.find("span").clone()); // тут у нас два span с текстом
+    marquee_p.wrapInner("<div class='all'>");
+    var reset_p = function() {
+        $(this).css("margin-top", "0%");
+        $(this).animate({ "margin-top": "-310%" }, 7000, 'linear', reset_p);
+    };
+    reset_p.call(marquee_p.find("div.all"));
+
+    var marquee_p2= $("#marquee_p2"); 
+    // оболочка для текста ввиде span 
+    marquee_p2.wrapInner("<span>");
+    marquee_p2.append(marquee_p.find("span").clone()); // тут у нас два span с текстом
+    marquee_p2.wrapInner("<div class='all'>");
+    var reset_p2 = function() {
+        $(this).css("margin-top", "0%");
+        $(this).animate({ "margin-top": "-310%" }, 7000, 'linear', reset_p2);
+    };
+    reset_p2.call(marquee_p2.find("div.all"));
 });
 
-var top_uslugi = $('#block-uslugi').offset().top;
-var top_wy =$('#block-wy').offset().top;
-var top_portfolio =$('#main-portfolio').offset().top;
-var top_clients =$('#clients').offset().top;
-$(window).on("scroll", function() {
-  if ($(window).scrollTop() > top_uslugi) {
-    $('#block-uslugi').addClass('anime');
-  }
-  if ($(window).scrollTop() > top_wy - 450) {
-    $('#block-wy').addClass('anime');
-    $('.anime .count').each(function () {
-      $(this).prop('Counter',0).animate({
-        Counter: $(this).data("count")
-    }, {
-        duration: 1000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
+
+  var top_uslugi = $('#block-uslugi').offset().top;
+  var top_wy =$('#block-wy').offset().top;
+  var top_portfolio =$('#main-portfolio').offset().top;
+  var top_clients =$('#clients').offset().top;
+    $(window).on("scroll", function() {
+      if ($(window).scrollTop() > top_uslugi-200) {
+        $('#block-uslugi').addClass('anime');
+      }
+      if ($(window).scrollTop() > top_wy - 450) {
+        $('#block-wy').addClass('anime');
+        $('.anime .count').each(function () {
+          $(this).prop('Counter',0).animate({
+            Counter: $(this).data("count")
+        }, {
+            duration: 2000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+      });
+      }
+      if ($(window).scrollTop() > top_portfolio) {
+        $('#main-portfolio').addClass('anime');
+        $('.slider-portfolio').slick({
+          vertical: true,
+          verticalSwiping: true,
+          slidesToShow: 1,
+          autoplay: true,
+          autoplaySpeed:0,
+          speed: 3300,
+          arrows:false
+      });
+      }
+      if ($(window).scrollTop() > top_clients) {
+        $('#clients').addClass('anime');
+      }
     });
-  });
-  }
-  if ($(window).scrollTop() > top_portfolio) {
-    $('#main-portfolio').addClass('anime');
-  }
-  if ($(window).scrollTop() > top_clients) {
-    $('#clients').addClass('anime');
-  }
-});
