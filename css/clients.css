@@ -85,6 +85,10 @@ p.num {
 }
 
 @media (max-width:1200px) {
+    #reviews {
+        width: calc(100% - 233px)
+    }
+
     #reviews .slider-reviews {
         background-size: 40px;
         padding: 0 0 0 50px;
