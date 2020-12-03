@@ -190,15 +190,7 @@ $(document).ready(function(){
       }
       if ($(window).scrollTop() > top_portfolio) {
         $('#main-portfolio').addClass('anime');
-        $('.slider-portfolio').slick({
-          vertical: true,
-          verticalSwiping: true,
-          slidesToShow: 1,
-          autoplay: true,
-          autoplaySpeed:0,
-          speed: 3300,
-          arrows:false
-      });
+        
       }
       if ($(window).scrollTop() > top_clients) {
         $('#clients').addClass('anime');

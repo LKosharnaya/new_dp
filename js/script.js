@@ -44,4 +44,12 @@ $(".slider-reviews").on("init reInit afterChange", function(event, slick, curren
 var all_slide = $(".slider-reviews").slick("getSlick").slideCount;
 
 $('#reviews p.num .all').text(all_slide);
-
+$('.slider-portfolio').slick({
+    vertical: true,
+    verticalSwiping: true,
+    slidesToShow: 1,
+    autoplay: true,
+    autoplaySpeed:0,
+    speed: 3300,
+    arrows:false
+});
