@@ -53,3 +53,23 @@ $('.slider-portfolio').slick({
     speed: 3300,
     arrows:false
 });
+
+
+$(".tabs_caption").on("click", "li:not(.active)", function() {
+    $('.cases').removeClass("active");
+    $(this)
+    .addClass("active")
+    .siblings()
+    .removeClass("active")
+    .closest("div.content")
+    .find("div.tabs_content")
+    .removeClass("active")
+    .eq($(this).index())
+    .addClass("active");
+});
+$('#all_tabs').on('click',function(){
+    $(this).addClass("active")
+    $('.cases').addClass("active");
+    $('.tabs_caption li').removeClass("active");
+});
+
