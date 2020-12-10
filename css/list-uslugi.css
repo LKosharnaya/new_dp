@@ -43,22 +43,29 @@
 
 #list-uslugs .img svg circle,
 #list-uslugs .img svg path,
-#list-uslugs .img svg line {
+#list-uslugs .img svg line,
+#list-uslugs .img svg rect {
     opacity: 0;
 }
 
 #list-uslugs li:nth-child(1) .img .top,
-#list-uslugs li:nth-child(1) .img .bottom {
+#list-uslugs li:nth-child(1) .img .bottom,
+#block-uslugi2 #list-uslugs li:nth-child(2) .img .top,
+#block-uslugi2 #list-uslugs li:nth-child(2) .img .bottom {
     background-color: #B72A22
 }
 
 #list-uslugs li:nth-child(2) .img .top,
-#list-uslugs li:nth-child(2) .img .bottom {
+#list-uslugs li:nth-child(2) .img .bottom,
+#block-uslugi2 #list-uslugs li:nth-child(3) .img .top,
+#block-uslugi2 #list-uslugs li:nth-child(3) .img .bottom {
     background-color: #EF7D2A;
 }
 
 #list-uslugs li:nth-child(3) .img .top,
-#list-uslugs li:nth-child(3) .img .bottom {
+#list-uslugs li:nth-child(3) .img .bottom,
+#block-uslugi2 #list-uslugs li:nth-child(1) .img .top,
+#block-uslugi2 #list-uslugs li:nth-child(1) .img .bottom {
     background-color: #F8AD03
 }
 

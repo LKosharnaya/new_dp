@@ -21,6 +21,7 @@ header #logo {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: -15px;
 }
 
 header #logo span {
@@ -60,6 +61,16 @@ header #logo span {
 .large a,
 .black .menu .large a {
     color: #FECD08;
+}
+
+@media (min-width:768px) {
+    .menu a.active {
+        border-bottom: 4px solid #000;
+    }
+
+    .black .menu a.active {
+        border-bottom: 4px solid #fff;
+    }
 }
 
 #list-tems {

@@ -148,11 +148,12 @@ footer .bottom ul li {
     margin-left: 10px;
 }
 
-footer .bottom ul li svg {
+footer .bottom ul li svg,
+.black footer .bottom ul li svg path {
     fill: black;
 }
 
-.black footer .bottom ul li svg {
+.black footer .bottom ul li svg path.color {
     fill: white;
 }
 

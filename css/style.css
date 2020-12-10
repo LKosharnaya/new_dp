@@ -43,6 +43,15 @@ h1 {
     margin: 0 auto;
 }
 
+p {
+    font-size: 14px;
+    color: #040404;
+}
+
+.black p {
+    color: #fff;
+}
+
 #zoom2 {
     margin-top: 20px;
 }
@@ -102,9 +111,38 @@ h2 {
     margin-bottom: 5em;
 }
 
+h2.first_inpage {
+    margin-top: 9vw;
+}
+
 body.black h2 {
     color: #fff;
     border-bottom: 1px solid #fff;
+}
+
+a.read_more {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 50px;
+    text-align: right;
+    color: #040404;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a.read_more svg {
+    margin-left: 20px;
+    stroke: #1D1B1B;
+}
+
+.black a.read_more {
+    color: #fff;
+}
+
+.black a.read_more svg {
+    stroke: #fff;
 }
 
 @media(max-width:1200px) {

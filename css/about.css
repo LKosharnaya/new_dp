@@ -1,0 +1,168 @@
+.about_flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about_flex img {
+    max-width: 100%;
+}
+
+.about_flex .right-cont {
+    width: 692px;
+    max-width: 50%;
+}
+
+.about_flex .right-cont p {
+    font-size: 25px;
+    line-height: 35px;
+    color: #040404;
+}
+
+.about_flex .right-cont h3 {
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 4.2vw 0 3.2vw;
+}
+
+.about_flex .right-cont ul {
+    border-top: 1px solid #000;
+}
+
+.about_flex .right-cont li {
+    border-bottom: 1px solid #000;
+    padding: 17px 0;
+    font-size: 25px;
+    line-height: 35px;
+    color: #040404;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_flex .right-cont li a {
+    font-weight: 600;
+    text-align: right;
+    font-style: italic;
+    color: #040404;
+}
+
+#block-uslugi2 {
+    margin-top: 6vw;
+}
+
+#block-uslugi2 li,
+#block-uslugi2 li p {
+    margin-bottom: 0;
+}
+
+#block-uslugi2 #uslug5_svg1 {
+    top: 35px;
+}
+
+#block-uslugi2 #uslug5_svg2 {
+    top: 50px;
+    left: 51px;
+}
+
+#block-uslugi2 #uslug5_svg3 {
+    top: 50px;
+    left: 95px;
+}
+
+#block-uslugi2 #us3_svg1 {
+    top: 31px;
+    left: 58px;
+}
+
+#block-uslugi2 #us3_svg2 {
+    top: 66px;
+    left: 85px;
+}
+
+#block-uslugi2 #us3_svg3 {
+    top: 12px;
+    left: 91px;
+}
+
+#block-uslugi2 h3 {
+    width: 193px;
+    min-height: auto;
+}
+
+#our_num #list-wy li {
+    width: calc(25% - 20px);
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+#our_num #list-wy li p {
+    color: #EF7D2A;
+    font-weight: bold;
+    font-size: 170px;
+    line-height: 1;
+    opacity: 0;
+    height: 20px;
+}
+
+#our_num.anime #list-wy li p {
+    opacity: 1;
+    height: auto;
+}
+
+#our_num #list-wy li p b {
+    display: inline-block;
+}
+
+.black #our_num #list-wy li:nth-child(4) b {
+    color: #fff;
+
+}
+
+.black .about_flex .right-cont p,
+.black .about_flex .right-cont h3,
+.black .about_flex .right-cont li,
+.black .about_flex .right-cont li a {
+    color: #fff;
+}
+
+.black .about_flex .right-cont ul {
+    border-top: 1px solid #fff;
+}
+
+.black .about_flex .right-cont li {
+    border-bottom: 1px solid #fff;
+}
+
+@media (max-width: 1200px) {
+    #our_num #list-wy li p {
+        font-size: 12vw;
+    }
+}
+
+@media(max-width:1023px) {
+    .about_flex {
+        justify-content: center;
+    }
+
+    .about_flex .right-cont {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 25px;
+    }
+
+    #our_num #list-wy li span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    #our_num #list-wy li {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}

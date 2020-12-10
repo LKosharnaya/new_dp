@@ -3,14 +3,16 @@
 }
 
 /*start anime for block uslugi*/
-.anime #list-uslugs #uslug1_circle1 {
+.anime #list-uslugs #uslug1_circle1,
+.anime#block-uslugi2 #uslug1_circle1 {
     opacity: 0;
     animation: cirlce1 1s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 1s;
 }
 
-.anime #list-uslugs #uslug1_circle2 {
+.anime #list-uslugs #uslug1_circle2,
+.anime#block-uslugi2 #uslug1_circle2 {
     opacity: 0;
     animation: cirlce2 1s ease-in-out;
     animation-fill-mode: forwards;
@@ -19,7 +21,8 @@
 
 .anime #list-uslugs #uslug2_circle,
 .anime #uslug5_circle,
-.anime #uslug6_circle1 {
+.anime #uslug6_circle1,
+.anime#block-uslugi2 #uslug5_circle {
     opacity: 0;
     animation: cirlce3 1s ease-in-out;
     animation-fill-mode: forwards;
@@ -58,6 +61,27 @@
 .anime #uslug4_path1 {
     opacity: 0;
     animation: dash2 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anime #us3_rect1 {
+    opacity: 0;
+    animation: cirlce5 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anime #us3_rect2 {
+    opacity: 0;
+    animation: cirlce6 1s ease-in-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+.anime #us3_path {
+    opacity: 0;
+    animation: dash3 1s ease-in-out;
     animation-fill-mode: forwards;
     animation-delay: 1s;
 }
@@ -120,6 +144,30 @@
     }
 }
 
+@keyframes cirlce5 {
+    from {
+        opacity: 1;
+        stroke-dasharray: 0 195
+    }
+
+    to {
+        opacity: 1;
+        stroke-dasharray: 355 195
+    }
+}
+
+@keyframes cirlce6 {
+    from {
+        opacity: 1;
+        stroke-dasharray: 0 55
+    }
+
+    to {
+        opacity: 1;
+        stroke-dasharray: 75 55
+    }
+}
+
 @keyframes dash {
     0% {
         opacity: 1;
@@ -141,6 +189,18 @@
     100% {
         opacity: 1;
         stroke-dasharray: 400 1200;
+    }
+}
+
+@keyframes dash3 {
+    0% {
+        opacity: 1;
+        stroke-dasharray: 0 50
+    }
+
+    100% {
+        opacity: 1;
+        stroke-dasharray: 90 50;
     }
 }
 

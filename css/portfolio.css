@@ -1,0 +1,58 @@
+@import url(tabs.css);
+
+.portfolios .portfolio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 70px;
+}
+
+.portfolios .portfolio img {
+    max-width: 508px;
+}
+
+.portfolios .portfolio .text_portfolio {
+    width: 49%;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.portfolios .portfolio .text_portfolio h3 {
+    font-weight: bold;
+    font-size: 2.7vw;
+    margin-bottom: 40px;
+    line-height: 1;
+    text-align: right;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.portfolios .portfolio .text_portfolio p {
+    width: 50%;
+    line-height: 20px;
+    text-align: right;
+    margin-bottom: 70px;
+}
+
+.black .portfolios .portfolio .text_portfolio h3 {
+    color: #fff;
+}
+
+@media (max-width:767px) {
+    .portfolios .portfolio img {
+        max-width: 100%;
+    }
+
+    .portfolios .portfolio .text_portfolio h3 {
+        font-size: 18px;
+    }
+
+    .portfolios .portfolio .text_portfolio,
+    .portfolios .portfolio .text_portfolio p {
+        width: 100%;
+    }
+}

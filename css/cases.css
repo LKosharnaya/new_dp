@@ -1,0 +1,57 @@
+@import url(tabs.css);
+
+
+
+.cases.tabs_content.active {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cases .case {
+    width: 48%;
+    max-width: 508px;
+}
+
+.cases .case img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 3vw;
+}
+
+.cases .case h3 {
+    font-weight: bold;
+    font-size: 2.6vw;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 2.2vw;
+}
+
+.black .cases .case h3 {
+    color: #fff;
+}
+
+.cases .case p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cases .case a.read_more {
+    margin-top: 25px;
+}
+
+@media (max-width:767px) {
+    .cases .case {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cases .case h3 {
+        font-size: 18px;
+    }
+
+    .cases.tabs_content.active {
+        justify-content: center;
+    }
+}
