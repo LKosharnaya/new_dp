@@ -139,7 +139,17 @@ span.click_file {
     left: 120vw;
     z-index: 10;
 }
-
+.black .form_q .text, .black .office .map{
+    border-bottom: 1px solid #fff;
+    color:#fff
+}
+.black .form_q .btn, .black .office .map{
+    background-image: url(../img/arow_w.svg);
+}
+.black .form_q .btn, .black span.click_file, .black .office h3,
+.black .office h4{
+    color: #fff;
+}
 @media (max-width: 900px){
     .office p, .office a{
         margin-bottom: 25px;
