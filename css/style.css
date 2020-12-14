@@ -47,8 +47,16 @@ p {
     font-size: 14px;
     color: #040404;
 }
-
-.black p {
+a{
+    font-size: 14px;
+    line-height: 20px;
+    color: #040404;
+    display: inline-block;
+}
+a:hover{
+    text-decoration: underline;
+}
+.black p, .black a {
     color: #fff;
 }
 
