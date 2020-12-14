@@ -297,3 +297,18 @@
         height: 0;
     }
 }
+
+.office.anime iframe{
+    animation: left_map 1s ease-in-out;
+    -webkit-animation: left_map 1s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes left_map {
+    0% {
+        left: 120vw;
+    }
+    100% {
+        left: 0;
+    }
+}

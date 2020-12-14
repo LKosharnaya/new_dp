@@ -71,6 +71,7 @@ span.click_file {
     line-height: 20px;
     color: #040404;
     cursor: pointer;
+    max-width: 50%;
 }
 
 .office {
@@ -78,9 +79,11 @@ span.click_file {
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 3.8vw;
+    position: relative;
 }
 
 .office img {
+    width: calc(100% - 300px);
     max-width: 895px;
 }
 
@@ -109,4 +112,59 @@ span.click_file {
     line-height: 35px;
     color: #040404;
     margin-bottom: 10px;
+}
+.office .map{
+    background: url(../img/arow.svg) no-repeat right center;
+    padding-right: 45px;
+    font-size: 25px;
+    line-height: 35px;
+    color: #040404;
+    border-bottom: 1px solid #040404;
+    margin-bottom: 30px;
+    display:inline-block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.office a{
+    margin-bottom: 50px;
+}
+.office iframe{
+    width: calc(100% - 300px);
+    max-width: 895px;
+    position: absolute;
+    top: 0;
+    left: 120vw;
+    z-index: 10;
+}
+
+@media (max-width: 900px){
+    .office p, .office a{
+        margin-bottom: 25px;
+    }
+    .office h4{
+        margin-top: 5px;
+    }
+    .top_contact h1{
+        font-size: 70px;
+        width: 200px;
+    }
+} 
+@media(max-width:668px){
+    .office img, .office iframe, .office .office_content{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    .office .office_content{
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:468px){
+    .top_contact h1{
+        display: none;
+    }
+    .form_q{
+        width: 100%;
+        margin-bottom: 35px;
+    }
 }
