@@ -72,4 +72,15 @@ $('#all_tabs').on('click',function(){
     $('.cases').addClass("active");
     $('.tabs_caption li').removeClass("active");
 });
+$(".click_file").on('click', function(){
+    var input = $(this).siblings("input.file");
+    var btn = this;
+    $(this).siblings("input.file").click();
+    $(input).on('change',function(){
+        var file = $(input).val();
+        $(btn).text(file);
+    });
+});
+
+
 

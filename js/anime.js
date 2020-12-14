@@ -183,46 +183,49 @@ $(document).ready(function(){
   if($('#our_num').length){
     var our_num =$('#our_num').offset().top;
   }
-    $(window).on("scroll", function() {
-      if ($(window).scrollTop() > top_uslugi-200) {
-        $('#block-uslugi').addClass('anime');
-      }
-      if ($(window).scrollTop() > top_wy - 450) {
-        $('#block-wy').addClass('anime');
-        $('.anime .count').each(function () {
-          $(this).prop('Counter',0).animate({
-            Counter: $(this).data("count")
-        }, {
-            duration: 2000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-      });
-      }
-      if ($(window).scrollTop() > top_portfolio) {
-        $('#main-portfolio').addClass('anime');
-        
-      }
-      if ($(window).scrollTop() > top_clients) {
-        $('#clients').addClass('anime');
-      }
-      if ($(window).scrollTop() > top_uslugi2 - 100) {
-        $('#block-uslugi2').addClass('anime');
-      }
-      if ($(window).scrollTop() > our_num - 200) {
-        $('#our_num').addClass('anime');
-        $('.anime .count').each(function () {
-          $(this).prop('Counter',0).animate({
-            Counter: $(this).data("count")
-        }, {
-            duration: 2000,
-            easing: 'swing',
-            step: function (now) {
-                $(this).text(Math.ceil(now));
-            }
-        });
-      });
-      }
+$(window).on("scroll", function() {
+  if ($(window).scrollTop() > top_uslugi-200) {
+    $('#block-uslugi').addClass('anime');
+  }
+  if ($(window).scrollTop() > top_wy - 450) {
+    $('#block-wy').addClass('anime');
+    $('.anime .count').each(function () {
+      $(this).prop('Counter',0).animate({
+        Counter: $(this).data("count")
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
     });
+  });
+  }
+  if ($(window).scrollTop() > top_portfolio) {
+    $('#main-portfolio').addClass('anime');
+    
+  }
+  if ($(window).scrollTop() > top_clients) {
+    $('#clients').addClass('anime');
+  }
+  if ($(window).scrollTop() > top_uslugi2 - 100) {
+    $('#block-uslugi2').addClass('anime');
+  }
+  if ($(window).scrollTop() > our_num - 200) {
+    $('#our_num').addClass('anime');
+    $('.anime .count').each(function () {
+      $(this).prop('Counter',0).animate({
+        Counter: $(this).data("count")
+    }, {
+        duration: 2000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+  });
+  }
+});
+$('.office .map').on('click', function(){
+ $(this).parents('.office').addClass('anime');
+ });
