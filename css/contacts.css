@@ -80,11 +80,13 @@ span.click_file {
     flex-wrap: wrap;
     margin-bottom: 3.8vw;
     position: relative;
+    overflow: hidden;
 }
 
 .office img {
     width: calc(100% - 300px);
     max-width: 895px;
+    height: 455px;
 }
 
 .office .office_content {
@@ -149,6 +151,7 @@ span.click_file {
         font-size: 70px;
         width: 200px;
     }
+    
 } 
 @media(max-width:668px){
     .office img, .office iframe, .office .office_content{
@@ -158,6 +161,10 @@ span.click_file {
     .office .office_content{
         margin-bottom: 50px;
     }
+    .office iframe{
+        width: 100%;
+    }
+    
 }
 @media(max-width:468px){
     .top_contact h1{
@@ -166,5 +173,8 @@ span.click_file {
     .form_q{
         width: 100%;
         margin-bottom: 35px;
+    }
+    .office img, .office iframe{
+        height: 300px;
     }
 }
